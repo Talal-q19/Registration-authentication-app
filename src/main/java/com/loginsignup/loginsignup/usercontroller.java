@@ -30,6 +30,11 @@ public class usercontroller {
     public String loginPage() {
         return "login";
     }
+    @GetMapping("/index")
+    public String indexPage() {
+        return "index";
+    }
+    
 
  @PostMapping("/signup")
  public String signUp(@RequestParam String username, @RequestParam String password, Model model) {
